@@ -1,0 +1,7 @@
+parameters:
+#    wilson.example.class: Wilson\WilsonBundle\Example
+
+services:
+#    wilson.example:
+#        class: %wilson.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

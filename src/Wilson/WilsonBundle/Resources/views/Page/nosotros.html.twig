@@ -1,0 +1,83 @@
+{# src/Wilson/WilsonBundle/Resources/views/about.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}About{% endblock %}
+
+{% block menu %}
+  <ul class="nav">
+      <li><a href="{{ path('WilsonBundle_homepage') }}"><span>Inicio</span></a></li>
+      <li><a href="{{ path('WilsonBundle_nosotros') }}" class="active"><span>Nosotros</span></a></li>
+      <li><a href="{{ path('WilsonBundle_servicios') }}"><span>Servicios</span></a></li>
+      <li><a href="{{ path('WilsonBundle_blog') }}"><span>Blog</span></a></li>      
+      <li><a href="{{ path('WilsonBundle_galeria') }}"><span>Galeria</span></a></li>
+      <li><a href="{{ path('WilsonBundle_contacto') }}"><span>Contacto</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block body %}
+    <div class="leftPan">        	
+        <h3>Quienes somos</h3>
+   
+        <p><img src="{{ asset('images/PICT0018.JPG') }}" width="220" class="derecha" alt=" " /><br>Somos una ONG orientada fundamentalmente a la ayuda de la población extranjera. Se funda como iniciativa de un grupo  de profesionales  que llevamos  varios  años  trabajando  en  este ámbito y que consideramos la defensa de una  vida digna para todos y todas  como característica esencial inherente  a  todas nuestras actividades.</p>
+        
+
+        <div class="divisor"></div>
+    
+        <h3>Nuestra misión</h3>
+        
+        <p><img src="{{ asset('images/PICT0003.JPG') }}" width="220" class="izquierda" alt=" " /><br><br>Contribuir mediante la oferta de recursos de información, orientación, asesoramiento y formación a la integración social y laboral de las personas extranjeras. Sin excluir a los autóctonos en riesgo de exclusión que demanden nuestros servicios.</p>
+
+        <div class="divisor"></div>
+    
+        <h3>Nuestros valores</h3>
+          <ul><img src="{{ asset('images/PICT0008.JPG') }}" width="220" class="derecha" alt=" " />
+              <li>Igualdad en dignidad de todas las personas.</li>
+              <li>Igualad de derechos políticos, sociales, culturales y económicos.</li>
+              <li>Ciudadanía cosmopolita abierta desde el ámbito local al ámbito mundial.</li>
+              <li>Sociedad intercultural de base dialogica.</li>
+              <li>Tolerancia y respeto a la sociedad intercultural como forma de enriquecimiento mutuo.</li>
+              <li>Integración bidireccional a través de espacios de encuentro intercultural entre personas inmigrantes y autóctonas.</li>
+              <li>Tolerancia cero hacia cualquier forma de exclusión, como el racismo, la xenofobia o la aporofobia.</li>
+              <li>Apuesta por la paz, el equilibrio ecológico y desarrollo sostenible.</li>
+        </ul>
+
+        <div class="divisor"></div>
+    
+        <h3>Nuestros objetivos</h3>
+          <ul><img src="{{ asset('images/PICT0008.JPG') }}" width="220" class="derecha" alt=" " />
+              <li>Realizar una investigación sobre la formación y situación laboral de la población extranjera en Getxo.</li>
+              <li>Promover un proyecto para impulsar la homologación y convalidación de estudios realizados en sus países de origen.</li>
+              <li>Informar, orientar y asesorar en orden a facilitar la regularización de la situación administrativa.</li>  
+              <li>Detectar necesidades formativas y orientar sobre la oferta de cursos de formación o de actualización de conocimientos existentes en la Comunidad Autónoma Vasca.</li>  
+              <li>Ofrecer información y orientación escolar a padres extranjeros.</li>
+              <li>Facilitar la intermediación entre la oferta y la demanda de empleo.</li>
+              <li>Intermediar entre ofertantes y demandantes de empleo.</li>
+              <li>Promover un plan de formación integral orientado a la inserción laboral.</li>
+              <li>Impulsar un proyecto de educación en los valores de una ciudadanía intercultural que fomente la integración entre extranjeros y autóctonos.</li>
+              <li>Promover actividades de cooperación al desarrollo y codesarrollo en comunidades muy desfavorecidas.</li>
+          </ul>
+        </div>
+    <!--end of leftPan-->
+
+    <div class="rightPan">
+		<h3>Company Information</h3>
+        
+        <ul>
+        	<li>
+            	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+            </li>
+            
+            <li>
+            	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+            </li>
+            
+            <li>
+            	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+            </li>
+        </ul>
+    </div>
+    <!--end of rightPan-->
+{% endblock %}

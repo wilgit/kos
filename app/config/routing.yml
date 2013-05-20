@@ -1,0 +1,4 @@
+wilson:
+    resource: "@WilsonBundle/Resources/config/routing.yml"
+    prefix:   /
+

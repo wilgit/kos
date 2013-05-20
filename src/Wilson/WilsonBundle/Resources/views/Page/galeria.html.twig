@@ -1,0 +1,63 @@
+{# src/Wilson/WilsonBundle/Resources/views/fotografias.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}Fotografias{% endblock %}
+
+{% block menu %}
+  <ul class="nav">
+      <li><a href="{{ path('WilsonBundle_homepage') }}"><span>Inicio</span></a></li>
+      <li><a href="{{ path('WilsonBundle_nosotros') }}"><span>Nosotros</span></a></li>
+      <li><a href="{{ path('WilsonBundle_servicios') }}"><span>Servicios</span></a></li>
+      <li><a href="{{ path('WilsonBundle_blog') }}"><span>Blog</span></a></li>      
+      <li><a href="{{ path('WilsonBundle_galeria') }}" class="active"><span>Galeria</span></a></li>
+      <li><a href="{{ path('WilsonBundle_contacto') }}"><span>Contacto</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block body %}
+
+        <div class="leftPan">        	
+            	<h3>Company portfolio</h3>
+                
+                <ul class="blog">
+					<li><h4>Lorem ipsum dolor sit amet</h4>
+                    	<img src="images/dummy-services.jpg" width="480" height="100" alt="" />
+        				<p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam. Aliquam erat volutpat.Nullam dui ipsum, 		pharetra eu bibendum ut, porta et turpis. Vivamus hendrerit velit eget urna placerat pretium. Aenean a dolor mi. Vestibulum iaculis vehicula tellus, a varius massa adipiscing id. Fusce eleifend neque eu mi sagittis quis viverra nisl dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam.</p>
+            			<p class="read"><a href="more.html" class="more">Read More</a></p>
+	       			</li>
+    				<li><h4>Lorem ipsum dolor sit amet</h4>
+                    	<img src="images/dummy-services.jpg" width="480" height="100" alt="" />
+            			<p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam. Aliquam erat volutpat.Nullam dui ipsum, pharetra eu bibendum ut, porta et turpis. Vivamus hendrerit velit eget urna placerat pretium. Aenean a dolor mi. Vestibulum iaculis vehicula tellus, a varius massa adipiscing id. Fusce eleifend neque eu mi sagittis quis viverra nisl dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam.</p>
+            			<p class="read"><a href="more.html" class="more">Read More</a></p>
+        			</li>
+        			<li><h4>Lorem ipsum dolor sit amet</h4>
+                    	<img src="images/dummy-services.jpg" width="480" height="100" alt="" />
+            			<p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam. Aliquam erat volutpat.Nullam dui ipsum, pharetra eu bibendum ut, porta et turpis. Vivamus hendrerit velit eget urna placerat pretium. Aenean a dolor mi. Vestibulum iaculis vehicula tellus, a varius massa adipiscing id. Fusce eleifend neque eu mi sagittis quis viverra nisl dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam.</p>
+            			<p class="read"><a href="more.html" class="more">Read More</a></p>
+        			</li>
+    			</ul>
+                
+        </div>
+        <!--end of leftPan-->
+
+        <div class="rightPan">
+			<h3>Recent Works</h3>
+            <ul>
+            	<li><p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+              </li>
+                
+                <li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+                
+                <li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+            </ul>
+      </div>
+        <!--end of rightPan-->
+
+{% endblock %}

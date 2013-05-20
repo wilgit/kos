@@ -1,0 +1,72 @@
+{# src/Wilson/WilsonBundle/Resources/views/blog.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block menu %}
+  <ul class="nav">
+      <li><a href="{{ path('WilsonBundle_homepage') }}"><span>Inicio</span></a></li>
+      <li><a href="{{ path('WilsonBundle_nosotros') }}"><span>Nosotros</span></a></li>
+      <li><a href="{{ path('WilsonBundle_servicios') }}"><span>Servicios</span></a></li>
+      <li><a href="{{ path('WilsonBundle_blog') }}" class="active"><span>Blog</span></a></li>      
+      <li><a href="{{ path('WilsonBundle_galeria') }}"><span>Galeria</span></a></li>
+      <li><a href="{{ path('WilsonBundle_contacto') }}"><span>Contacto</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block body %}
+
+        <div class="leftPan">
+                
+                <ul class="blog">
+					<li><h4>Lorem ipsum dolor sit amet</h4>
+    					<p class="date">11/4/08 | Posted By <a href="more.html">Author</a></p>
+        				<p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam. Aliquam erat volutpat.Nullam dui ipsum, 		pharetra eu bibendum ut, porta et turpis. Vivamus hendrerit velit eget urna placerat pretium. Aenean a dolor mi. Vestibulum iaculis vehicula tellus, a varius massa adipiscing id. Fusce eleifend neque eu mi sagittis quis viverra nisl dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam.</p>
+            			<p class="comments">Comments (25) <a href="more.html">Post a Comment</a></p>
+            			<p class="read"><a href="more.html" class="more">Read More</a></p>
+	       			</li>
+                    
+                    <div class="divisor"></div>
+
+    				<li><h4>Lorem ipsum dolor sit amet</h4>
+        				<p class="date">11/4/08 | Posted By <a href="more.html">Author</a></p>
+            			<p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam. Aliquam erat volutpat.Nullam dui ipsum, pharetra eu bibendum ut, porta et turpis. Vivamus hendrerit velit eget urna placerat pretium. Aenean a dolor mi. Vestibulum iaculis vehicula tellus, a varius massa adipiscing id. Fusce eleifend neque eu mi sagittis quis viverra nisl dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam.</p>
+            			<p class="comments">Comments (05) <a href="more.html">Post a Comment</a></p>
+            			<p class="read"><a href="more.html" class="more">Read More</a></p>
+        			</li>
+        			
+                    <div class="divisor"></div>
+
+                    <li><h4>Lorem ipsum dolor sit amet</h4>
+            			<p class="date">11/4/08 | Posted By <a href="more.html">Author</a></p>
+            			<p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam. Aliquam erat volutpat.Nullam dui ipsum, pharetra eu bibendum ut, porta et turpis. Vivamus hendrerit velit eget urna placerat pretium. Aenean a dolor mi. Vestibulum iaculis vehicula tellus, a varius massa adipiscing id. Fusce eleifend neque eu mi sagittis quis viverra nisl dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus ipsum, sollicitudin ornare molestie nec, pretium id quam.</p>
+            			<p class="comments">Comments (10) <a href="more.html">Post a Comment</a></p>
+            			<p class="read"><a href="more.html" class="more">Read More</a></p>
+        			</li>
+    			</ul>
+                
+        </div>
+        <!--end of leftPan-->
+
+        <div class="rightPan">
+			<h3>Blog Contents</h3>
+            
+            <ul>
+            	<li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+                
+                <li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+                
+                <li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+            </ul>
+        </div>
+        <!--end of rightPan-->
+{% endblock %}

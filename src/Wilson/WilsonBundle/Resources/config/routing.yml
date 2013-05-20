@@ -1,0 +1,37 @@
+# src/Wilson/WilsonBundle/Resources/config/routing.yml
+
+WilsonBundle_homepage:
+    pattern:  /
+    defaults: { _controller: WilsonBundle:Page:index }
+    requirements:
+        _method:  GET
+
+WilsonBundle_nosotros:
+    pattern:  /nosotros
+    defaults: { _controller: WilsonBundle:Page:nosotros }
+    requirements:
+        _method:  GET
+
+WilsonBundle_blog:
+    pattern:  /blog
+    defaults: { _controller: WilsonBundle:Page:blog }
+    requirements:
+        _method:  GET
+
+WilsonBundle_servicios:
+    pattern:  /servicios
+    defaults: { _controller: WilsonBundle:Page:servicios }
+    requirements:
+        _method:  GET
+
+WilsonBundle_galeria:
+    pattern:  /galeria
+    defaults: { _controller: WilsonBundle:Page:galeria }
+    requirements:
+        _method:  GET
+
+WilsonBundle_contacto:
+    pattern:  /contacto
+    defaults: { _controller: WilsonBundle:Page:contacto }
+    requirements:
+        _method:  GET

@@ -1,0 +1,53 @@
+{# src/Wilson/WilsonBundle/Resources/views/contacto.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block menu %}
+  <ul class="nav">
+      <li><a href="{{ path('WilsonBundle_homepage') }}"><span>Inicio</span></a></li>
+      <li><a href="{{ path('WilsonBundle_nosotros') }}"><span>Nosotros</span></a></li>
+      <li><a href="{{ path('WilsonBundle_servicios') }}"><span>Servicios</span></a></li>
+      <li><a href="{{ path('WilsonBundle_blog') }}"><span>Blog</span></a></li>      
+      <li><a href="{{ path('WilsonBundle_galeria') }}"><span>Galeria</span></a></li>
+      <li><a href="{{ path('WilsonBundle_contacto') }}" class="active"><span>Contacto</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block body %}
+
+        <div class="leftPan">           
+            <h3>Contacta con nosotros</h3>
+                
+            
+
+            <form action="{{ path('WilsonBundle_contacto') }}" method="post" {{ form_enctype(form) }} class="formulario">
+                {{ form_errors(form) }}
+
+                {{ form_row(form.nombre) }}
+                {{ form_row(form.email) }}
+                {{ form_row(form.asunto) }}
+                {{ form_row(form.texto) }}
+
+                {{ form_rest(form) }}
+
+                <input type="submit" value="Enviar" />
+            </form>
+
+        </div>  
+        <!--end of leftPan-->
+
+        <div class="rightPan">
+            <h3>Dirección</h3>
+            
+            <p class="address">
+                <strong>c/ Alangoeta 8, (lonja)</strong><br />
+                        C.P. 48930 - Algorta (Getxo) <br />
+                        Bizkaia<br />
+                        España
+            </p>
+            
+        </div>
+        <!--end of rightPan-->
+  
+{% endblock %}

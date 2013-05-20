@@ -1,0 +1,53 @@
+{# src/Wilson/WilsonBundle/Resources/views/servicios.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block menu %}
+  <ul class="nav">
+      <li><a href="{{ path('WilsonBundle_homepage') }}"><span>Inicio</span></a></li>
+      <li><a href="{{ path('WilsonBundle_nosotros') }}"><span>Nosotros</span></a></li>
+      <li><a href="{{ path('WilsonBundle_servicios') }}" class="active"><span>Servicios</span></a></li>
+      <li><a href="{{ path('WilsonBundle_blog') }}"><span>Blog</span></a></li>      
+      <li><a href="{{ path('WilsonBundle_galeria') }}"><span>Galeria</span></a></li>
+      <li><a href="{{ path('WilsonBundle_contacto') }}"><span>Contacto</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block body %}
+        <div class="leftPan">        	
+            	<h3>Our Services</h3>
+                <img src="images/dummy-services.jpg" width="480" height="100" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo vulputate leo, vel congue magna facilisis a. Phasellus orci lorem, dapibus nec varius ac, aliquam non sem. In volutpat volutpat lacus, quis ultrices tortor adipiscing non. Morbi condimentum imperdiet tortor eget luctus. Integer eget enim ut diam iaculis feugiat. Nulla interdum, nisl vel vehicula dictum, turpis risus ullamcorper sem, eget bibendum dolor metus vitae nibh.</p>
+                
+                <p>Nullam turpisras dapibus, orci rutrum adipiscing luctus, nisl magna tempus urna, id porttitor nunc arcu et mauris. Suspendisse id justo id suscipit porttitor. Pellentesque aliquet, leo id vestibulum eleifend, magna sem iaculis risus, quis volutpat turpis quam in tortor morbi euismod.Aenean porttitor malesuada vulputate. Pellentesque interdum, elit non tempus sagittis, dui nibh tincidunt sem, vitae pulvinar metus orci id lorem. Aenean id mi sit amet felis laoreet interdum in mattis tellus. Mauris faucibus sodales neque, ac convallis erat dapibus vitae.</p>
+                
+                <p>Donec non tortor diam. Nunc bibendum condimentum mi, vitae rhoncus purus dictum eleifend. Vivamus nec risus tellus, eget dignissim dui. Proin pharetra vulputate sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam porttitor adipiscing diam, sed egestas orci rutrum et.</p>
+                
+                <p>In purus nunc, faucibus in suscipit cursus, cursus quis nulla. In hac habitasse platea dictumst. Maecenas eu mauris a arcu ullamcorper commodo luctus vel magna. Pellentesque eu nisi quis magna consequat elementum in eget tellus. Duis in felis sem, vitae mollis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo nisi id ligula sodales tempor. Integer quis erat orci, eu fermentum augue. Nam ornare tellus a nibh volutpat ac euismod dui tincidunt. </p>
+                
+        </div>
+        <!--end of leftPan-->
+
+        <div class="rightPan">
+			<h3>Other Services Offered</h3>
+            
+            <ul>
+            	<li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+                
+                <li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+                
+                <li>
+                	<p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                    <a href="more.html" class="more">Read More</a>
+                </li>
+            </ul>
+        </div>
+        <!--end of rightPan-->
+{% endblock %}

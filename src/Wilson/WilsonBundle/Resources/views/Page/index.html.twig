@@ -1,0 +1,133 @@
+{# src/Wilson/WilsonBundle/Resources/views/Page/index.html.twig #}
+{% extends 'WilsonBundle::base.html.twig' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block menu %}
+  <ul class="nav">
+      <li><a href="{{ path('WilsonBundle_homepage') }}" class="active"><span>Inicio</span></a></li>
+      <li><a href="{{ path('WilsonBundle_nosotros') }}"><span>Nosotros</span></a></li>
+      <li><a href="{{ path('WilsonBundle_servicios') }}"><span>Servicios</span></a></li>
+      <li><a href="{{ path('WilsonBundle_blog') }}"><span>Blog</span></a></li>      
+      <li><a href="{{ path('WilsonBundle_galeria') }}"><span>Galeria</span></a></li>
+      <li><a href="{{ path('WilsonBundle_contacto') }}"><span>Contacto</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block slides %}
+  <div id="slideshow">
+    <div id="slidePanel">
+        <div id="slider1" class="sliderwrapper">
+
+        <div class="contentdiv">
+            <div class="banner">
+              
+
+              <div class="innerRight">
+                  <h2>Aenean nacum<br />seme osus.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipis uspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellu opn pulvinar lectus a est. Curabitur eget orc ras laoreet ligula. Etiam sit amet dolor. Vesposuere cubilia curaeullam tellus diam.</p>
+              </div>
+<img src="{{ asset('images/banner-img.png') }}" width="314" height="260" alt=" " />
+              <p class="buttons">
+                  <a href="more.html" class="rmore">Read More</a>
+                  <a href="more.html" class="signup">Sign Up Now!</a>
+             </p>
+          </div><!--end of banner-->
+        </div>
+
+         <div class="contentdiv">
+            <div class="banner">
+              <img src="{{ asset('images/banner-img2.png') }}" width="314" height="260" alt=" " />
+
+              <div class="innerRight">
+                  <h2>Welcome to<br />Our Website.</h2>
+                  <p>Nullam turpisras dapibus, orci rutrum adipiscing luctus, nisl magna tempus urna, id porttitor nunc arcu et mauris. Suspendisse id justo id suscipit porttitor. Pellentesque aliquet, leo id vestibulum eleifend, magna sem iaculis risus, quis volutpat turpis quam in tortor morbi euismod.</p>
+              </div>
+
+              <p class="buttons">
+                  <a href="more.html" class="rmore">Read More</a>
+                  <a href="more.html" class="signup">Sign Up Now!</a>
+             </p>
+          </div><!--end of banner-->
+        </div>
+
+        <div class="contentdiv">
+            <div class="banner">
+              <img src="{{ asset('images/banner-img3.png') }}" width="314" height="260" alt=" " />
+
+              <div class="innerRight">
+                  <h2>Aenean nacum<br />seme osus.</h2>
+                  <p>Aenean porttitor malesuada vulputate. Pellentesque interdum, elit non tempus sagittis, dui nibh tincidunt sem, vitae pulvinar metus orci id lorem. Aenean id mi sit amet felis laoreet interdum in mattis tellus. Mauris faucibus sodales neque, ac convallis erat dapibus vitae.</p>
+              </div>
+
+              <p class="buttons">
+                  <a href="more.html" class="rmore">Read More</a>
+                  <a href="more.html" class="signup">Sign Up Now!</a>
+             </p>
+          </div><!--end of banner-->
+        </div>
+
+         <div class="contentdiv">
+            <div class="banner">
+              <img src="{{ asset('images/banner-img4.png') }}" width="314" height="260" alt=" " />
+
+              <div class="innerRight">
+                  <h2>Aenean nacum<br />seme osus.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipis uspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellu opn pulvinar lectus a est. Curabitur eget orc ras laoreet ligula. Etiam sit amet dolor. Vesposuere cubilia curaeullam tellus diam.</p>
+              </div>
+
+              <p class="buttons">
+                  <a href="more.html" class="rmore">Read More</a>
+                  <a href="more.html" class="signup">Sign Up Now!</a>
+             </p>
+          </div><!--end of banner-->
+        </div> <div id="paginate-slider1" class="pagination"></div><!--end of pagination-->
+     </div>
+    </div>
+  </div><!--end of slider content -->
+{% endblock %}
+
+{% block body %}
+    <div class="leftPan">
+        <div class="innerLeft">
+            <h3>Bienvenidos!</h3>
+            <p>En este tiempo de globalización de la información y nuevas tecnologías, no queremos quedarnos retrasados, por esa razón les presentamos nuestro portal en internet, para que pueda servir de interlocutor entre nosotros y toda la gente que necesite información sobre lo que hacemos y en que podemos ayudarle.</p>
+
+            <p>En este tiempo de globalización de la información y nuevas tecnologías, no queremos quedarnos retrasados, por esa razón les presentamos nuestro portal en internet, para que pueda servir de interlocutor entre nosotros y toda la gente que necesite información sobre lo que hacemos y en que podemos ayudarle.</p>
+
+            <a href="{{ path('WilsonBundle_nosotros') }}" class="aboutus">More about us</a>
+        </div><!--end of left inner-->
+
+        <div class="inneRight">
+            <h3>Featured Services</h3>
+            <img src="{{ asset('images/template-1.gif') }}" width="277" height="95" alt=" " />
+            <p><strong>Aliquam lacinia ante quis nibh urabitur venenad</strong>Pellentesque habitant morbi tristue sene uocuset netus et malesuada fames.</p>
+
+            <img src="{{ asset('images/template-2.gif') }}" width="277" height="95" alt=" " />
+            <p><strong>Sliquam lacinia ante quis nibh urabitur venenad</strong> Pellentesque habitant morbi tristue sene uocuset netus et malesuada fames.</p>
+        </div><!--end of inner right content inside leftPan-->
+    </div>
+    <!--end of leftPan-->
+
+    <div class="rightPan">
+        <h3>Recent from Blogs</h3>
+
+        <ul>
+            <li>
+                <p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+            </li>
+
+            <li>
+                <p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+            </li>
+
+            <li>
+                <p><strong>Maenas sed nisl nec lectus commodo interdu</strong><br /> interdum, nulla ut posuere luctus, est erat fringlla est, vel lobortis odio mi a purus. Vivamus sit amet felis. Vivamus et justo in nunc pharetra semper. </p>
+                <a href="more.html" class="more">Read More</a>
+            </li>
+        </ul>
+    </div>
+    <!--end of rightPan-->
+{% endblock %}
